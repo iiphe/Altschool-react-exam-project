@@ -1,12 +1,10 @@
-import React from 'react';
-import { useState, useFetch } from 'react';
-import Results from '../components/Results';
-import {axios} from "axios"
-
-
+import React from "react";
+import { useState } from "react";
+import Results from "../components/Results";
+import axios from "axios";
 
 const SearchBar = () => {
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState("");
 
   const [repos, setRepos] = useState([]);
 
@@ -18,11 +16,11 @@ const SearchBar = () => {
     console.log(searchInput);
 
     try {
-      const result = await axios( `https://api.https://github.com/users/${searchInput}/repos`);
+      const result = await axios(
+        `https://api.github.com/users/${searchInput}/repos`
+      );
       setRepos(result);
-    
-      
-      
+
       /*const response = await usefetch(
         `https://api.https://github.com/users/${searchInputs}/repos`
       );
@@ -32,11 +30,10 @@ const SearchBar = () => {
       console.log(err);
     }
   };
-  console.log(repos);
 
   return (
     <>
-      <div style={{ padding: '20px' }}>
+      <div style={{ padding: "20px" }}>
         <input
           type="text"
           placeholder="search"
