@@ -1,17 +1,15 @@
 import React from "react";
-import { useState } from "react";
 import Results from "../components/Results";
 import axios from "axios";
+import { useState } from "react";
 
 const SearchBar = () => {
   const [searchInput, setSearchInput] = useState("");
-
   const [repos, setRepos] = useState([]);
 
   const handleChange = (e) => {
     setSearchInput(e.target.value);
   };
-
   const handleClick = async () => {
     console.log(searchInput);
 
@@ -33,16 +31,18 @@ const SearchBar = () => {
 
   return (
     <>
-      <div style={{ padding: "20px" }}>
+      <div className="search-bar" style={{ padding: "50px" }}>
         <input
           type="text"
           placeholder="search"
           value={searchInput}
           onChange={handleChange}
         />
-        <button onClick={handleClick}>Search</button>
+        <button className="search-button" onClick={handleClick}>
+          Search
+        </button>
       </div>
-      <Results repos={repos} />
+      <Results className="repos-list" repos={repos} />
     </>
   );
 };
