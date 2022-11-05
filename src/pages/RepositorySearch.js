@@ -17,6 +17,7 @@ const [repos] = useState();*/
         />
         <h1>Repository Search </h1>
       </nav>
+
       <SearchBar />
     </div>
   );

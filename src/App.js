@@ -26,7 +26,7 @@ const [repos] = useState();*/
     <div>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <nav>
-          <ul>
+          <ul className="nav-links">
             <Link to="/">Home</Link>
 
             <Link to="/repositorySearch">RepositorySearch</Link>

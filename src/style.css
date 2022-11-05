@@ -27,10 +27,17 @@
 .logo {
   width: 40px;
   display: flex;
-  margin-left: 100px;
+  margin-left: 50%;
 }
 h1 {
-  padding: 200px;
-  margin-left: 0px;
   display: flex;
+  padding: ;
+  margin-left: 10%;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  margin: auto;
+  margin-top: 5px;
 }
