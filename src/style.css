@@ -8,9 +8,9 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-  height: 15vh;
+  height: 10vh;
   box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
 }
 
@@ -18,7 +18,9 @@
   padding: auto;
   margin-left: 10px;
 }
-
+.search-bar {
+  margin-left: 10px;
+}
 .repo-lists {
   justify-content: center;
   padding: auto;
@@ -46,13 +48,20 @@ h1 {
   margin: auto;
   margin-top: 10px;
 }
-nav-links li {
+.paragraph {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+nav-links ul {
   margin-top: 10px;
   color: black;
-  font-size: 20px;
+  font-size: 30px;
   padding: 0 10px;
   margin: 0 10px;
   cursor: pointer;
   text-transform: capitalize;
   text-decoration: none;
+}
+ul {
+  font-size: 20px;
 }

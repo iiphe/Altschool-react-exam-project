@@ -15,7 +15,7 @@ const [repos] = useState();*/
           src={"https://cdn-icons-png.flaticon.com/512/25/25231.png"}
           alt="Logo"
         />
-        <h1>Repository Search </h1>
+        <h1>Search Github Repository </h1>
       </nav>
 
       <SearchBar />

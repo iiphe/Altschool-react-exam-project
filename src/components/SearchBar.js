@@ -31,6 +31,7 @@ const SearchBar = () => {
 
   return (
     <>
+      <p className="paragraph">Enter your github username below:</p>
       <div className="search-bar" style={{ padding: "50px" }}>
         <input
           type="text"
