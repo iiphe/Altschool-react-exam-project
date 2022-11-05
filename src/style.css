@@ -27,17 +27,32 @@
 .logo {
   width: 40px;
   display: flex;
-  margin-left: 50%;
+  margin-left: 10px;
 }
 h1 {
+  padding: 20px;
+  margin-left: 0px;
   display: flex;
-  padding: ;
-  margin-left: 10%;
+}
+.h1-home {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20%;
 }
 .nav-links {
   display: flex;
   justify-content: space-evenly;
   width: 75%;
   margin: auto;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+nav-links li {
+  margin-top: 10px;
+  color: black;
+  font-size: 20px;
+  padding: 0 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
 }
